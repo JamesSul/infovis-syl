@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"    content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author"      content="Sergey Pozhilov (GetTemplate.com)">
+	
+	<title>Information Visualization - Unit 13</title>
+
+	<link rel="shortcut icon" href="assets/images/gt_favicon.png">
+	
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!-- Custom styles for our template -->
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen" >
+	<link rel="stylesheet" href="assets/css/main.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav pull-right">
+					<li ><a href="index.html">Home</a></li>
+					<li class="dropdown" >
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Schedule<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="schedule.html">Full Schedule</a></li>
+							<li><a href="unit1.html">Unit 1</a></li>
+							<li><a href="unit2.html">Unit 2</a></li>
+							<li><a href="unit3.html">Unit 3</a></li>
+							<li><a href="unit4.html">Unit 4</a></li>
+							<li><a href="unit5.html">Unit 5</a></li>
+							<li><a href="unit6.html">Unit 6</a></li>
+							<li><a href="unit7.html">Unit 7</a></li>
+							<li><a href="unit8.html">Unit 8</a></li>
+							<li><a href="unit9.html">Unit 9</a></li>
+							<li><a href="unit10.html">Unit 10</a></li>
+							<li><a href="unit11.html">Unit 11</a></li>
+							<li><a href="unit12.html">Unit 12</a></li>
+							<li><a href="unit13.html">Unit 13</a></li>
+							<li><a href="unit14.html">Unit 14</a></li>
+						</ul>
+					</li>
+					<li><a href="syllabus.html">Syllabus</a></li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="project.html">Project</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+	<header id="head" class="secondary"></header>
+
+	<!-- container -->
+	<div class="container">
+		
+		<ol class="breadcrumb">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="schedule.html">Schedule</a></li>
+			<li class="active">Unit 13</li>
+		</ol>
+
+		<div class="row">
+			
+			<!-- Sidebar -->
+			<aside class="col-md-4 sidebar sidebar-left">
+
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4><i class="fa fa-book fa-5"></i> Readings</h4>
+						<p><a href="http://blog.visual.ly/why-d3-js-is-so-great-for-data-visualization/">Why is D3.js so great...?</a><br>
+						<a href="http://www.spatiallyadjusted.com/2012/12/28/why-d3-will-change-how-we-publish-maps/">Why D3 will change how we map</a></p>
+					</div>
+				</div>
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4><i class="fa fa-file fa-5"></i> Files</h4>
+						<p>	
+							No files.
+						</p>
+					</div>
+				</div>
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4><i class="fa fa-pencil fa-5"></i> <a href="#lecture">Lecture notes</a></h4>
+						<p></p>
+					</div>
+				</div>
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4><i class="fa fa-youtube-play fa-5"></i> Videos</h4>
+						<p>
+							<a href="http://media.usm.maine.edu/~suleiman/mba677/unit13/u13.mp4">Mapping basics</a><br>
+							<em>note: using more text due to coding</em>
+							</p>
+					</div>
+				</div>
+				<div class="row widget">
+					<div class="col-xs-12">
+						<h4><i class="fa fa-bullseye fa-5"></i> Learning Goals</h4>
+						<ul>
+						<li>Understand what D3.js is.</li>
+						<li>Understand why D3 is important.</li>
+						</ul>
+					</div>
+				</div>
+
+			</aside>
+			<!-- /Sidebar -->
+
+			<!-- Article main content -->
+			<article class="col-md-8 maincontent">
+				<header class="page-header">
+					<h1 class="page-title">Due: Final Project</h1>
+				</header>
+				
+
+				<header class="page-header">
+					<h1 class="page-title">Lecture Notes</h1>
+				</header>
+
+				<h2 id="tools">Tools</h2>
+					<p>This is a somewhat different type of tutorial in that because there is so much code you'll need to type, I am not going to do a step-by-step video. I will, however, be much more precise in the steps I provide in the notes (which take the place of a video tutorial). The video will show you how to use the tools to use the code that I provide in this tutorial. To complete this tutorial you will need the following:</p>
+					<ul>
+					<li>A text editor. I recommend <a href="http://www.sublimetext.com/3">Sublime Text</a> -- it is free and multi-platform.</li>
+					<li>If you are insistent on using Internet Explorer as your browser, make sure you are using a version later than 9. Personally, I would recommend Chrome or Firefox.</li>
+					</ul>
+					<h2 id="scalable-vector-graphics-svg">Scalable Vector Graphics (SVG)</h2>
+					<p>We discussed the difference between vectors and rasters in mapping. With images, since vector images are merely coordinates or shapes they tend to scale much better than raster graphics as the image from the <a href="http://en.wikipedia.org/wiki/Scalable_Vector_Graphics">SVG wikipedia page</a> shows below.</p>
+					<div class="figure">
+					<img src="./assets/images/512px-Bitmap_VS_SVG.png" />
+					</div>
+					<p>SVG, as the name implies, are vector based graphics and superior to most raster graphics for visualizations. In this unit, we are going to create a visualization with D3.js which uses the web standards HTML, SVG, and CSS. We need to spend a little bit of time explaining SVG first. Let's assume I want to draw a vertical bar.</p>
+					<p>With SVG, I'll need to define the rectangle somewhat differently than I did with the mapping polygons we worked with earlier. SVG is an XML based markup language that has predefined shapes like <code>&lt;rect&gt;</code>, <code>&lt;circle&gt;</code>, <code>&lt;ellipse&gt;</code>, <code>&lt;polygon&gt;</code>, <code>&lt;line&gt;</code>, <code>&lt;polyline&gt;</code>, <code>&lt;path&gt;</code>. For a rectangle we would need to define the width and height, typically in <a href="http://en.wikipedia.org/wiki/Pixel">pixels</a>, and possibly the fill color. If we wanted to generate a blue rectangle that is 30 pixels wide and 100 pixels high we could use the code shown below.</p>
+					
+	<pre><code>	&lt;svg&gt;
+	  	&lt;rect width=&quot;30&quot; height=&quot;100&quot; style=&quot;fill:rgb(0,0,255)&quot; /&gt;
+	&lt;/svg&gt;</code></pre>
+					<div class="figure">
+					<img src="./assets/images/onebar.png" />
+					</div>
+					<p>The only thing that might not be self-explanatory is that we are using <a href="http://www.w3schools.com/cssref/css_colors.asp">CSS colors</a> to control the fill color where <code>rgb(0,0,255)</code> specifies the values for red, green, and blue respectively. Below the code is the rendering of the svg graphic.</p>
+					<p>Go ahead and try to copy/paste the code above and see if you can obtain similar results in your browser.</p>
+					<p>We can add multiple rectangles within a single svg element. You should be able to recognize that svg can be used to create a bar chart. You might notice that I'm also specifying the svg container size in the code. While not required, this is a good idea to avoid having graphical elements appear in odd places on your web page. You may also notice that i've added x and y coordinates for where to place the bars in the container.</p>
+<pre><code>	&lt;svg  width = &quot;100&quot; height = &quot;120&quot;&gt;
+		&lt;rect x=&quot;10&quot; y=&quot;10&quot; width=&quot;30&quot; height=&quot;100&quot; style=&quot;fill:rgb(0,0,255)&quot; /&gt;
+		 &lt;rect x=&quot;50&quot; y=&quot;30&quot; width=&quot;30&quot; height=&quot;80&quot; style=&quot;fill:rgb(0,0,255)&quot; /&gt;
+	&lt;/svg&gt;</code></pre>
+					<div class="figure">
+					<img src="./assets/images/twobar.png" />
+					</div>
+					<p>Overwrite your old code with the new code above and verify that you can see two rectangles in your browser. The container has a coordinate system where the (0,0) point is at the top left and as you move vertically down, the y coordinate <strong>increases</strong>. The x and y coordinates of the rectangle apply to the top left of the rectangle element.</p>
+					<div class="figure">
+					<img src="./assets/images/graphPaper.png" />
+					</div>
+					<p>One thing to note is that if you ever do want to create more complex images as svg graphics, <a href="http://www.inkscape.org/en/">Inkscape</a> is a powerful open source illustration tool that can save graphics as svg. Creating a bar graph in svg isn't all that complex but if the data changes, we have to modify the coordinates used. <a href="http://d3js.org">D3.js</a> allows us to connect data to html, svg, and css so we can create charts dynamically and modify them automatically as the data changes. In this tutorial we are simply going to scratch the surface of D3. To develop mastery in D3, it is helpful to understand the Document Object Model (<a href="http://www.w3.org/DOM/">DOM</a>), <a href="http://en.wikipedia.org/wiki/JavaScript">javascript</a>, cascading style sheets (<a href="http://en.wikipedia.org/wiki/Css">css</a>), javascript object notation (<a href="http://en.wikipedia.org/wiki/Json">json</a>), and svg.</p>
+					<p>There is not enough time in the semester to cover all of those technologies so please understand, the purpose of this tutorial is to <em>expose</em> you to D3 and not to <em>teach</em> you D3. I'm going to start with the final product and then work backwards. We are going to create the following three proportional bars for annual sales data for 10, 12, and 19 monetary units. There will be no labels, no axes, just proportional vertical bars to show some of the basics of D3. After we work through that, I'll take a look at an example API called <a href="http://dimplejs.org">dimple</a> that attempts to minimize the, quite substantial, learning curve of D3. Finally, we will examine a bar chart generator and a very early version of D3 authoring software that is conceptually somewhat similar to Tableau.</p>
+					<p>Here are the three bars we will be recreating -- they are unimpressive to say the least.</p>
+					<div class="figure">
+					<img src="./assets/images/d3bars.png" />
+					</div>
+					<p>Before I go into describing the process of building the bars, we need to create a simple html page that will serve as a template for our work. We will continue to add code to our template until we recreate the three bars. Below is the template.</p>
+<pre><code>	&lt;html&gt;
+		&lt;head&gt;
+			&lt;script type=&quot;text/javascript&quot; 
+			src=&quot;http://d3js.org/d3.v3.min.js&quot; 
+			charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+			&lt;script type=&quot;text/javascript&quot;&gt;
+			//your code goes here
+			&lt;/script&gt;
+		&lt;/body&gt;
+	&lt;/html&gt;</code></pre>
+					<p>Hopefully you have already had some minimal exposure to html. If not, keep in mind that html is a markup language that has opening and closing tags. The <code>&lt;html&gt;</code> tag tells the browser this is an html document and is closed by <code>&lt;/html&gt;</code>. The <code>&lt;head&gt;</code> tag, in this case, contains the <code>&lt;script&gt;</code> tag which references the d3 library is placed in the head. Generally speaking, we place library reference scripts in the head and actual code scripts in the body but there are some <a href="http://stackoverflow.com/questions/436411/where-is-the-best-place-to-put-script-tags-in-html-markup">potential exceptions</a> to this practice. We are using the <code>.min.js</code> version of d3 as it is a smaller library and faster. Every step we follow from now on will go in the <code>&lt;script&gt;</code> tag in the <code>&lt;body&gt;</code> just below the <code>//your code goes here</code> comment. To oversimplify, the <code>&lt;body&gt;</code> tag is where everything that displays in your browser goes.</p>
+					<p>In the next step, we will define variables that we will later use to set the container width and height and padding between bars. We will also create a dataset variable containing three values (10,12,19).</p>
+	<pre><code>	//your code goes here
+	//Define the container width and height
+	var w = 100;
+	var h = 100;
+	var barPadding = 1;
+	var dataset = [ 10, 12, 19 ];
+	//the next step&#39;s code goes here</code></pre>
+					<p>Typically, raw data is brought in as <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> but we are using a simple array to reduce the complexity of this tutorial. So far, we have just created variables. We still need to do something with these variables. The first thing we need to do is create an SVG element that uses our container definitions.</p>
+<pre><code>	//the prior step&#39;s code goes here
+	//Create SVG element
+	var svg = d3.select(&quot;body&quot;)
+		.append(&quot;svg&quot;)
+		.attr(&quot;width&quot;, w)
+		.attr(&quot;height&quot;, h);
+	//the next step&#39;s code goes here</code></pre>
+					<p>We have just created an svg container. the <code>select</code> function selects an element on the page. In this case we are selecting the <code>&lt;body&gt; &lt;/body&gt;</code> section of the page (i.e., the visible portion) and appending an svg element with a width of w (which we previously defined as 100) and a height of h (also previously defined). This is essentially adding the following svg code inside of the <code>&lt;body&gt;</code></p>
+					<pre><code>  &lt;svg width=&quot;100&quot;, height=&quot;100&gt; &lt;/svg&gt;
+					  </code></pre>
+					<p>We have created an empty svg container with nothing in it. We need to put rectangles in it but we need to think about how big our rectangles should be to fit into our 100px x 100px container. Since we are doing vertical bars, the heights will be proportional to the data (10, 12, 19) but those values will produce tiny bars. I want to make them bigger so I'll multiply by 5. This will make the largest bar 19 x 5 (95) px high and the smallest will be 50. I also need to set the width of the bars. I'm going to allow for one pixel of padding between the bars so my bar width should be my container width (100) divided by the number of data points I have (3) minus the bar padding (1) or 32.333 pixels. Because I want this to work for multiple data sets, I'll use the <code>dataset.length</code> function, which in this case will return 3.</p>
+					<p>I also need to set x and y coordinates for each of my bars (or rectangles) and will use similar calculations to accomplish that.</p>
+<pre><code>  // prior step&#39;s code goes here
+  svg.selectAll(&quot;rect&quot;)
+     .data(dataset)
+     .enter()
+     .append(&quot;rect&quot;)
+     .attr(&quot;x&quot;, function(d, i) {
+        return i * (w / dataset.length);
+     })
+     .attr(&quot;y&quot;, function(d) {
+        return h - (d * 5);
+     })
+     .attr(&quot;width&quot;, w / dataset.length - barPadding)
+     .attr(&quot;height&quot;, function(d) {
+        return d  * 5;
+     })
+   //next step&#39;s code goes here.</code></pre>
+					<p>The function <code>selectAll(&quot;rect&quot;)</code> and then <code>.data(dataset)</code> binds the data to our rectangles which we add with <code>.enter().append(&quot;rect&quot;)</code>. If you have never written a function before this code will be incredibly difficult to follow but we are simply defining and adding the rectangles in between the <code>&lt;svg&gt;</code> and <code>&lt;/svg&gt;</code> tags that we created earlier. I know I've said this before, but if you really want to analyze data, in addition to analytical skills (i.e., a good grasp of statistics and mathematics) you really need to know how to program and query databases.</p>
+					<p>Finally, we want to make these boxes a pretty color. Instead of using the <code>rgb()</code> definition, I'll simply use a predefined color understood in CSS.</p>
+<pre><code>	//previous step&#39;s code goes here
+	.attr(&quot;fill&quot;, &quot;teal&quot;);</code></pre>
+					<p>That is as far into D3 as we are going. Here is a link to the <a href="http://media.usm.maine.edu/~suleiman/mba677/unit13/d3Final.html">final product</a>. You can view source to see the code. If you want to learn more, Mike Bostock, the creator of D3 has a tutorial called <a href="http://bost.ocks.org/mike/bar/">Let's Make a Bar Chart</a> that goes into far more depth while remaining somewhat introductory. I highly recommend it.</p>
+					<p>Hopefully that wasn't too painful and you aren't currently having violent convulsions. I'm going to show you progressively easier ways to work with D3 but remember, there is always a tradeoff. Directly coding in D3, gives you all of the paints and all of the brushes you would ever need. I'm going to use another API, Dimple, that sits on top of D3 intended to simplify it. This is the equivalent of giving you stencils. Lets assume that we want to show years, axes, etc. for our data. That would substantially increase the complexity of this tutorial and if we wanted to draw something like this...:</p>
+					<div class="figure">
+					<img src="./assets/images/dimplebar.png" />
+					</div>
+					<p>...I would be receiving more angry emails than I do for a poorly designed quiz! Luckily, dimple makes this all much easier. Below is the code. It is incredibly self-explanatory.</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://d3js.org/d3.v3.min.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://dimplejs.org/dist/dimple.v1.1.5.min.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+var svg = dimple.newSvg(&quot;body&quot;, 800, 600);
+var data = [
+  { &quot;Year&quot;:&quot;2011&quot;, &quot;Sales&quot;:10 },
+  { &quot;Year&quot;:&quot;2012&quot;, &quot;Sales&quot;:12 },
+  { &quot;Year&quot;:&quot;2013&quot;, &quot;Sales&quot;:19 }
+  ];
+var chart = new dimple.chart(svg, data);
+chart.addCategoryAxis(&quot;x&quot;, &quot;Year&quot;);
+chart.addMeasureAxis(&quot;y&quot;, &quot;Sales&quot;);
+chart.addSeries(null, dimple.plot.bar);
+chart.draw();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+					<p>Conceptually, this is much more simple. Here is a link to the <a href="http://media.usm.maine.edu/~suleiman/mba677/unit13/dimpleFinal.html">dimple html</a>. Also, the data here is actually JSON formatted instead of being in a simple array.</p>
+					<p>So we've had paints and brushes, stencils, and finally there is this:</p>
+					<div class="figure">
+					<img src="./assets/images/barbie.jpg" />
+					</div>
+					<p>There are a few D3 generator tools out there that are developing. These are the equivalent of magnetic dress-up Barbie. She doesn't have a lot of options but the outfits are all stunning. The tool I'm going to show you is <a href="http://d3-generator.com">d3 generator</a>. First you paste your data.</p>
+					<div class="figure">
+					<img src="./assets/images/d3DataPaste.png" />
+					</div>
+					<p>Then you fill out your chart specifications.</p>
+					<div class="figure">
+					<img src="./assets/images/d3ChartSpecs.png" />
+					</div>
+					<p>Then it spits out your d3 code.</p>
+					<div class="figure">
+					<img src="./assets/images/d3Source.png" />
+					</div>
+					<p>...and your beautiful chart.</p>
+					<div class="figure">
+					<img src="./assets/images/d3Chart.png" />
+					</div>
+					<p>Want a vertical instead of a horizontal bar chart? Too bad, so sad -- Magnetic Barbie doesn't have that outfit.</p>
+					<p>There have been similar paints and brushes before D3. Namely, <a href="http://prefuse.org">Prefuse</a>, <a href="http://flare.prefuse.org">Flare</a>, <a href="http://processingjs.org">Processing</a>, <a href="http://raphaeljs.com">Raphaël</a>, and many others. So why has D3 become immensely popular while the others have languished or failed? Simply put, it is more robust, it is open, and it has a lot of momentum. Drew Skau, wrote a great <a href="http://blog.visual.ly/why-d3-js-is-so-great-for-data-visualization/">blog post</a> explaining D3's success.</p>
+					<p>So what about Tableau? Tableau has several advantages over D3:</p>
+					<ul>
+					<li>you don't need to know how to code.</li>
+					<li>it is incredibly user friendly.</li>
+					<li>it has built in connectivity to a variety of data sources.</li>
+					<li>it has a strong user community.</li>
+					</ul>
+					<p>Think of Tableau as a Magnetic Barbie with a massive wardrobe and tools to make additional magnetic clothing. For most visualization tasks, Tableau provides nearly everything you need. It also happens to be somewhat expensive (D3 is free) and locks you in to the Tableau Server (D3 runs on javascript which runs in any web browser). D3 also has a strong user community. Ironically, both technologies were birthed inside the Stanford Visualization Lab (which has since moved to University of Washington and is now called the <a href="http://idl.cs.washington.edu">Interactive Data Lab</a>). As D3 authoring tools develop, D3 will become a strong competitor to Tableau and I would not be surprised if future versions of Tableau have the ability to generate D3 code.</p>
+					<p>To get an idea of authoring tools on the horizon, and as a Lagniappe, <a href="http://raw.densitydesign.org">here is a link to Density Design's authoring tool called Raw</a>. I recommend you use their sample data sets. Alternatively if you are already too braindead to work with any more D3, simply <a href="http://vimeo.com/75866661">watch the Raw tutorial video</a></p>
+
+
+
+
+
+
+
+			</article>
+			<!-- /Article -->
+
+		</div>
+	</div>	<!-- /container -->
+	
+
+		<div class="footer2">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-md-6 widget">
+						<div class="widget-body">
+							<p class="simplenav">
+								<a href="index.html">Home</a> | 
+								<a href="schedule.html">Schedule</a> |
+								<a href="syllabus.html">Syllabus</a> |
+								<a href="resources.html">Resources</a> |
+								<a href="project.html">Project</a> | 
+								<a href="contact.html">Contact</a>
+							</p>
+						</div>
+					</div>
+
+					
+
+				</div> <!-- /row of widgets -->
+			</div>
+		</div>
+	</footer>	
+		
+
+
+
+
+	<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/headroom.min.js"></script>
+	<script src="assets/js/jQuery.headroom.min.js"></script>
+	<script src="assets/js/template.js"></script>
+</body>
+</html>
